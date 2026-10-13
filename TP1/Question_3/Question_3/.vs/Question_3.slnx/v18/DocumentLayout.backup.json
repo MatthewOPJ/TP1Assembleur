@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2B89E8-37D9-45E2-9A32-0222101052D9}|Question_3\\Question_3.vcxproj|C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\procedures.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EA2B89E8-37D9-45E2-9A32-0222101052D9}|Question_3\\Question_3.vcxproj|solutionrelative:Question_3\\procedures.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA2B89E8-37D9-45E2-9A32-0222101052D9}|Question_3\\Question_3.vcxproj|C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\principale.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EA2B89E8-37D9-45E2-9A32-0222101052D9}|Question_3\\Question_3.vcxproj|solutionrelative:Question_3\\principale.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "procedures.asm",
+              "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\procedures.asm",
+              "RelativeDocumentMoniker": "Question_3\\procedures.asm",
+              "ToolTip": "C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\procedures.asm",
+              "RelativeToolTip": "Question_3\\procedures.asm",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-12T19:27:21.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "principale.cpp",
+              "DocumentMoniker": "C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\principale.cpp",
+              "RelativeDocumentMoniker": "Question_3\\principale.cpp",
+              "ToolTip": "C:\\Users\\tauZa\\Desktop\\UQAR_Automne_2026\\Infrastructure de programmation\\TP1\\Question_3\\Question_3\\Question_3\\principale.cpp",
+              "RelativeToolTip": "Question_3\\principale.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-12T19:27:13.466Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
