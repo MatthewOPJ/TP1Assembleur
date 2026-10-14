@@ -1,46 +1,62 @@
-.data
-    pointeur QWORD 0            ; pointeur null     
-
-
 .code
 
-	PUBLIC Push_Fin
-	PUBLIC Pop_Stack
+PUBLIC Push_Fin
+PUBLIC FIFO
 
-	Push_Fin PROC
-        pop R8
-        cmp pointeur, 0
-        jne pas_egale
-        mov pointeur, rsp
+Push_Fin PROC
+    pop r11                            ; ptr de retour
 
-        pas_egale:
-            push cx
-            mov rsi, rsp                  ; ptr de swap
-            add rsi, 2                    ; 2e élément pour le 1er swap
+    pas_egale:
+        push cx
+        mov rdi, rsp                  ; ptr de swap
+        add rdi, 2                    ; 2e élément pour le 1er swap
 
-        debut_boucle:
-            cmp rsi, pointeur
-            je fin_boucle
+    debut_boucle:
+        cmp rdi, rbx
+        je fin_boucle
 
-            mov ax, WORD ptr [rsi]        ; load les deux valeurs
-            mov bx, WORD ptr [rsi - 2]    
+        mov ax, WORD ptr [rdi]        ; load les deux valeurs
+        mov r10w, WORD ptr [rdi - 2]    
 
-            mov WORD ptr [rsi], bx        ; swap
-            mov WORD ptr [rsi - 2], ax
+        mov WORD ptr [rdi], r10w        ; swap
+        mov WORD ptr [rdi - 2], ax
 
-            add rsi, 2                    ; prochain élément
-            jmp debut_boucle
+        add rdi, 2                    ; prochain élément
+        jmp debut_boucle
 
-        fin_boucle:
-            push R8
-            ret                            ; pas de valeur de retour
-    Push_Fin ENDP
+    fin_boucle:
+        push r11
+        ret                            ; pas de valeur de retour
+Push_Fin ENDP
 
-    Pop_Stack PROC
-        pop R8
-        pop ax
-        push R8
-        ret
-    Pop_Stack ENDP
+
+
+FIFO PROC
+
+    mov r9, rcx                 ; r9 = ptr vers in
+                                ; rdx = ptr vers out
+                                ; r8 = taille des listes
+    mov rbx, rsp
+    xor rsi, rsi
+    
+debut_push:
+    mov cx, [r9 + rsi * 2]
+    call Push_Fin
+
+    inc rsi
+    cmp rsi, r8
+    jl debut_push
+
+    xor rsi, rsi
+
+debut_pop:
+    pop cx
+    mov WORD ptr [rdx + rsi * 2], cx
+    inc rsi
+    cmp rsi, r8
+    jl debut_pop
+
+    ret
+FIFO ENDP
 
 END

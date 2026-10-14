@@ -5,28 +5,23 @@
 
 extern "C"
 {
-	void Push_Fin(short valeur);
-	short Pop_Stack();
+	void FIFO(short* in, short* out, int n);
 }
 
 int main()
 {
-	short valeur;
+	const int n = 4;
+	short arr[n] = {};
 
-	for (int i = 0; i <= 3; i++)
-	{
-		printf("Veuillez rentrer la valeur: ");
-		if (!scanf("%hd", &valeur))
-		{
-			valeur = 0;
-		}
-			
-		Push_Fin(valeur);
+	for (int i = 0; i < n; i++) {
+		printf("Entrez un nombre: ");
+		if(!scanf("%hd", &arr[i])) arr[i] = 0;
 	}
 
-	for (int i = 0; i <= 3; i++)
-	{
-		printf("Valeur Pop: %hd", Pop_Stack());
-	}
+	short nouvel_ordre[n] = {}; 
+	FIFO(arr, nouvel_ordre, n);
 
+	for (int i = 0; i < n; i++) {
+		printf("valeur: %hd\n", nouvel_ordre[i]);
+	}
 }
